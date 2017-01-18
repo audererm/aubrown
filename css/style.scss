@@ -7,11 +7,11 @@ $mont: Montserrat, sans-serif;
 $nav-height: 120px;
 
 .hero {
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .slogan {
-      padding-top: 55px;
-      padding-left: 90px;
       h1 {
+        font-size: 5vw;
         font-family: $mont;
         color: $lightpurple;
         text-align: center;
@@ -19,12 +19,12 @@ $nav-height: 120px;
       .btn-flat {
         color: white;
         background-color: $darkpurple;
-        font-size: 20px;
-        width: 70%;
-        height: 80px;
+        font-size: 1.6vw;
+        width: 55%;
+        height: 6.5vw;
         position: relative;
         display: inline-block;
-        line-height: 80px;
+        line-height: 6.5vw;
         vertical-align: middle;
         text-align: center;
         -moz-border-radius: 5px;
@@ -32,10 +32,8 @@ $nav-height: 120px;
         border-radius: 5px; /* future proofing */
         -khtml-border-radius: 5px; /* for old Konqueror browsers */
         //margin-left: 50px;
+        transition: 0;
       }
-    }
-    img {
-      filter: grayscale(100%);
     }
 }
 

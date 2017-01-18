@@ -1,31 +1,29 @@
 .hero {
-  padding-top: 10px; }
-  .hero .slogan {
-    padding-top: 55px;
-    padding-left: 90px; }
-    .hero .slogan h1 {
-      font-family: Montserrat, sans-serif;
-      color: #846b8a;
-      text-align: center; }
-    .hero .slogan .btn-flat {
-      color: white;
-      background-color: #68556e;
-      font-size: 20px;
-      width: 70%;
-      height: 80px;
-      position: relative;
-      display: inline-block;
-      line-height: 80px;
-      vertical-align: middle;
-      text-align: center;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      /* future proofing */
-      -khtml-border-radius: 5px;
-      /* for old Konqueror browsers */ }
-  .hero img {
-    filter: grayscale(100%); }
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .hero .slogan h1 {
+    font-size: 5vw;
+    font-family: Montserrat, sans-serif;
+    color: #846b8a;
+    text-align: center; }
+  .hero .slogan .btn-flat {
+    color: white;
+    background-color: #68556e;
+    font-size: 1.6vw;
+    width: 55%;
+    height: 6.5vw;
+    position: relative;
+    display: inline-block;
+    line-height: 6.5vw;
+    vertical-align: middle;
+    text-align: center;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* future proofing */
+    -khtml-border-radius: 5px;
+    /* for old Konqueror browsers */
+    transition: 0; }
 
 .nav-wrapper {
   padding: 0 24px; }
