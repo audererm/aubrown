@@ -1,0 +1,117 @@
+// Colors
+$purple: #76607C;
+$lightpurple: lighten($purple, 5%);
+$darkpurple: darken($purple, 5%);
+$mont: Montserrat, sans-serif;
+
+$nav-height: 120px;
+
+.hero {
+    padding-top: 10px;
+    .slogan {
+      padding-top: 55px;
+      padding-left: 90px;
+      h1 {
+        font-family: $mont;
+        color: $lightpurple;
+        text-align: center;
+      }
+      .btn-flat {
+        color: white;
+        background-color: $darkpurple;
+        font-size: 20px;
+        width: 70%;
+        height: 80px;
+        position: relative;
+        display: inline-block;
+        line-height: 80px;
+        vertical-align: middle;
+        text-align: center;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px; /* future proofing */
+        -khtml-border-radius: 5px; /* for old Konqueror browsers */
+        //margin-left: 50px;
+      }
+    }
+    img {
+      filter: grayscale(100%);
+    }
+}
+
+.nav-wrapper {
+    padding: 0 24px;
+}
+
+nav {
+    height: $nav-height;
+    ul {
+        a {
+            height: $nav-height;
+            padding-top: $nav-height * 0.2 + 4px;
+            padding-bottom: $nav-height * 0.2;
+            color: #665;
+            font-family: $mont;
+            &:hover {
+                color: #fff;
+                transition: 0.1s color, 0.3s background-color;
+                background-color: $darkpurple;
+            }
+        }
+    }
+    .brand-logo {
+        height: $nav-height;
+        img {
+            height: 60%;
+            margin-top: $nav-height * 0.2;
+            margin-bottom: $nav-height * 0.2;
+        }
+    }
+}
+
+p {
+    line-height: 2rem;
+}
+
+.button-collapse {
+    color: #26a69a;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
+}
+
+.parallax-container .section {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
