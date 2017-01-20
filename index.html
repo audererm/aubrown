@@ -13,41 +13,121 @@
 </head>
 
 <body>
-    <nav class="white z-depth-0" role="navigation">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="#" class="brand-logo"><img src="aubrown-webservices.png" class=""></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">WHO WE ARE</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">OUR WORK</a></li>
-                <li><a href="#">GET IN TOUCH</a></li>
-            </ul>
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    <div class="grey lighten-2">
-        <div class="hero row">
-            <div class="col s12 l6" style="float: right;">
-                <img src="computer.png" class="responsive-img">
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper">
+                <a id="logo-container" href="#" class="brand-logo">
+                    <span class="helper"></span>
+                    <img src="aubrown-webservices.png" class="">
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#team">WHO WE ARE</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">OUR WORK</a></li>
+                    <li><a href="#">GET IN TOUCH</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
             </div>
-            <div class="slogan col s12 l6">
-                <h1>Beautiful, responsive,<br>clean design.</h1>
-                <h2></h2>
-                <br>
-                <div class="center">
-                    <a class="btn-large z-depth-2 waves-effect waves-light">GET STARTED FOR FREE</a>
+        </nav>
+    </div>
+    <div class="hero row">
+        <img src="computer.png" class="responsive-img">
+        <div class="slogan">
+            <h1>Beautiful, <br>responsive,<br>clean design.</h1>
+            <h2></h2>
+            <br>
+            <a href="#contact-modal" class="btn-large z-depth-3 waves-effect waves-light">GET STARTED FOR FREE</a>
+        </div>
+    </div>
+    <div id="team" class="team row container scrollspy">
+        <div class="section row">
+            <h1>Meet The Team</h1>
+        </div>
+        <div class="section row team-card">
+            <div class="member col s12 m12">
+                <div class="col s12 m4">
+                    <div class="img-container">
+                        <img src="portrait2.jpg" class="circle responsive-img">
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h4>Michael Auderer</h4>
+                    <span class="title">Founder | Lead Developer | Project Manager | Designer</span>
+                    <p>Michael is the main designer behind Aubrown. He leads the team in developing websites and designing brands. He excels in coding and thinking creatively.</p>
+                    <a class="btn-flat waves-effect waves-light">See Michael's Work</a>
+                </div>
+            </div>
+        </div>
+        <div class="section row team-card">
+            <div class="member col s12 m12">
+                <div class="col s12 m4">
+                    <div class="img-container">
+                        <img src="portrait3.jpg" class="circle responsive-img">
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h4>Brad Brown</h4>
+                    <span class="title">Founder | Marketing Executive | Social Media Engineer</span>
+                    <p>Brad is the voice of Aubrown. If you need our services, Brad will work with you to find exactly what we can do to suit your needs.</p>
+                    <a class="btn-flat waves-effect waves-light">Contact Brad</a>
+                </div>
+            </div>
+        </div>
+        <div class="hide section row team-card">
+            <div class="member col s12 m12">
+                <div class="col s12 m4">
+                    <div class="img-container">
+                        <img src="portrait1.jpg" class="circle responsive-img">
+                    </div>
+                </div>
+                <div class="col s12 m8">
+                    <h4>Omar Thompson</h4>
+                    <span class="title">Lead Developer | Designer | Project Manager | Code Nerd</span>
+                    <p>Michael is the main designer behind Aubrown. He leads the team in developing websites and designing brands. He excels in coding and thinking creatively.</p>
+                    <a class="btn-flat waves-effect waves-light">Michael's Website</a>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
+    <!--516-534-9351-->
 </body>
+<div id="modals">
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+</div>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script>
+$(document).ready(function() {
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal({
+        in_duration: 140,
+        out_duration: 140,
+        starting_top: '10%',
+        ending_top: '20%'
+    });
+    $('.scrollspy').scrollSpy();
+});
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 64) {
+        $('nav').addClass('shrink');
+    } else {
+        $('nav').removeClass('shrink');
+    }
+});
+</script>
 
 </html>

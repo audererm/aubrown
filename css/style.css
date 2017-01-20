@@ -1,52 +1,152 @@
+.team h1 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  opacity: 0.7; }
+.team .team-card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
+  position: relative; }
+  .team .team-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+    .team .team-card:hover .btn-flat {
+      background-color: #7D59A7;
+      color: white; }
+.team .member {
+  display: block;
+  margin: auto;
+  height: auto;
+  float: none;
+  padding: auto; }
+  .team .member .img-container {
+    width: 100%; }
+  .team .member .content {
+    position: relative;
+    display: block; }
+  .team .member h4 {
+    opacity: 0.85; }
+  .team .member .title {
+    opacity: 0.7; }
+  .team .member .btn-flat {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.5s ease; }
+
+.glow {
+  -webkit-box-shadow: 0 0 50px #eee;
+  -moz-box-shadow: 0 0 50px #eee;
+  box-shadow: 0 0 80px -50px #fff;
+  width: 50%;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* future proofing */
+  -khtml-border-radius: 5px;
+  /* for old Konqueror browsers */
+  position: relative;
+  display: inline-block; }
+
 .hero {
   padding-top: 40px;
-  padding-bottom: 40px; }
-  .hero .slogan h1 {
-    font-size: 5vw;
-    font-family: Montserrat, sans-serif;
-    color: #846b8a;
-    text-align: center; }
-  .hero .slogan .btn-large {
-    color: white;
-    background-color: #68556e;
-    font-size: 1.6vw;
-    width: 55%;
-    height: 6.5vw;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #e0e0e0; }
+  .hero .slogan {
     position: relative;
-    display: inline-block;
-    line-height: 6.5vw;
-    vertical-align: middle;
-    text-align: center;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    /* future proofing */
-    -khtml-border-radius: 5px;
-    /* for old Konqueror browsers */
-    transition: 0; }
+    float: left;
+    margin-left: 9vw; }
+    .hero .slogan h1 {
+      font-size: 5vw;
+      font-family: Montserrat, sans-serif;
+      color: #846b8a;
+      text-align: center; }
+    .hero .slogan .btn-large {
+      color: white;
+      background-color: #7D59A7;
+      font-size: 1.6vw;
+      width: 26vw;
+      height: 6.5vw;
+      display: block;
+      margin: auto;
+      line-height: 6.5vw;
+      vertical-align: middle;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 3px;
+      /* future proofing */
+      -khtml-border-radius: 5px;
+      /* for old Konqueror browsers */
+      transition: 0.4s box-shadow, 8s background-color;
+      box-shadow: 0 0 150px rgba(255, 255, 255, 0.2), 0px 3px 15px #444; }
+      .hero .slogan .btn-large:hover {
+        box-shadow: none;
+        background-color: #9D59F7; }
+  .hero img {
+    width: 50vw;
+    margin-left: 6vw; }
 
 .nav-wrapper {
   padding: 0 24px; }
 
-nav {
-  height: 120px; }
-  nav ul a {
-    height: 120px;
-    padding-top: 28px;
-    padding-bottom: 24px;
-    color: #665;
-    font-family: Montserrat, sans-serif; }
-    nav ul a:hover {
-      color: #fff;
-      transition: 0.1s color, 0.3s background-color;
-      background-color: #68556e; }
-  nav .brand-logo {
-    height: 120px; }
-    nav .brand-logo img {
-      height: 60%;
-      margin-top: 24px;
-      margin-bottom: 24px; }
+.navbar-fixed {
+  margin-bottom: 50px; }
 
+nav {
+  height: 120px;
+  transition: 0.2s ease;
+  box-shadow: none; }
+  nav .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  nav ul {
+    display: inline !important;
+    vertical-align: middle !important; }
+    nav ul a {
+      height: 120px;
+      transition: 0.2s ease;
+      line-height: 120px;
+      color: #665;
+      font-family: Montserrat, sans-serif; }
+      nav ul a:hover {
+        color: #fff;
+        transition: 0.1s color, 0.3s background-color;
+        background-color: #7D59A7;
+        transition: 0.2s ease; }
+  nav .brand-logo {
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: 0.2s ease; }
+    nav .brand-logo img {
+      height: 100%;
+      display: inline-block;
+      transition: 0.2s ease; }
+
+.shrink {
+  height: 60px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  .shrink .brand-logo {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  .shrink a {
+    line-height: 60px;
+    height: 60px; }
+
+@media only screen and (max-width: 992px) {
+  .hero img {
+    width: 40%;
+    margin: auto;
+    display: block; }
+
+  nav {
+    height: 60px; }
+    nav .brand-logo {
+      height: 60px; }
+      nav .brand-logo img {
+        height: 60px;
+        margin: 0; } }
 p {
   line-height: 2rem; }
 
