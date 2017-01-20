@@ -118,7 +118,9 @@ $(document).ready(function() {
         starting_top: '10%',
         ending_top: '20%'
     });
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy({
+        scrollOffset: 60
+    });
 });
 
 $(window).scroll(function() {
