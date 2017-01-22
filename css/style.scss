@@ -192,6 +192,14 @@ $nav-height: 120px;
         //opacity: 0.8;
     }
     .collapsible {
+        li {
+            transition: 0.1s;
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                transform: translate(-10px, 0);
+            }
+        }
         .collapsible-header {
             font-family: $mont;
             font-size: 20px;
@@ -199,19 +207,12 @@ $nav-height: 120px;
             background-color: rgb(253, 253, 253);
             padding-top: 10px;
             padding-bottom: 10px;
-            transition: 0.1s;
-            &:hover {
-                color: #000;
-                background-color: #fff;
-                transform: translate(-10px, 0);
-            }
             &.active {
                 color: #000;
                 background-color: #fff;
                 &:hover {
                     color: #555;
                     background-color: rgb(253, 253, 253);
-                    transform: none;
                 }
             }
         }

@@ -129,25 +129,25 @@
     font-family: Montserrat, sans-serif;
     text-align: center;
     color: white; }
+  #services .collapsible li {
+    transition: 0.1s; }
+    #services .collapsible li:hover {
+      color: #000;
+      background-color: #fff;
+      transform: translate(-10px, 0); }
   #services .collapsible .collapsible-header {
     font-family: Montserrat, sans-serif;
     font-size: 20px;
     color: #555;
     background-color: #fdfdfd;
     padding-top: 10px;
-    padding-bottom: 10px;
-    transition: 0.1s; }
-    #services .collapsible .collapsible-header:hover {
-      color: #000;
-      background-color: #fff;
-      transform: translate(-10px, 0); }
+    padding-bottom: 10px; }
     #services .collapsible .collapsible-header.active {
       color: #000;
       background-color: #fff; }
       #services .collapsible .collapsible-header.active:hover {
         color: #555;
-        background-color: #fdfdfd;
-        transform: none; }
+        background-color: #fdfdfd; }
   #services .collapsible .collapsible-body {
     background-color: white; }
 
