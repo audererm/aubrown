@@ -1,67 +1,66 @@
-.team h1 {
-  font-family: Montserrat, sans-serif;
-  text-align: center;
-  opacity: 0.7; }
-.team .team-card {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.5s ease;
-  position: relative; }
-  .team .team-card:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
-    .team .team-card:hover .btn-flat {
-      background-color: #7D59A7;
-      color: white; }
-.team .member {
-  display: block;
-  margin: auto;
-  height: auto;
-  float: none;
-  padding: auto; }
-  .team .member .img-container {
-    width: 100%; }
-  .team .member .content {
-    position: relative;
-    display: block; }
-  .team .member h4 {
-    opacity: 0.85; }
-  .team .member .title {
-    opacity: 0.7; }
-  .team .member .btn-flat {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    transition: 0.5s ease; }
+#navbar {
+  margin-bottom: 50px; }
+  #navbar nav {
+    height: 120px;
+    transition: 0.2s ease;
+    box-shadow: none; }
+    #navbar nav .nav-wrapper {
+      padding: 0 24px; }
+    #navbar nav ul {
+      display: inline !important;
+      vertical-align: middle !important; }
+      #navbar nav ul a {
+        height: 120px;
+        transition: 0.2s ease;
+        line-height: 120px;
+        color: #665;
+        font-family: Montserrat, sans-serif; }
+        #navbar nav ul a:hover {
+          color: #fff;
+          transition: 0.1s color, 0.3s background-color;
+          background-color: #7D59A7;
+          transition: 0.2s ease; }
+          #navbar nav ul a:hover .highlight {
+            color: white; }
+      #navbar nav ul .highlight {
+        transition: color 0.2s, border 0.2s; }
+        #navbar nav ul .highlight a {
+          color: #7D59A7; }
+        #navbar nav ul .highlight:hover a {
+          color: white; }
+    #navbar nav .brand-logo {
+      height: 120px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      transition: 0.2s; }
+      #navbar nav .brand-logo img {
+        height: 100%; }
+    #navbar nav.shrink {
+      height: 60px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+      #navbar nav.shrink .brand-logo {
+        padding-top: 0px;
+        padding-bottom: 0px; }
+      #navbar nav.shrink a {
+        line-height: 60px;
+        height: 60px; }
 
-.glow {
-  -webkit-box-shadow: 0 0 50px #eee;
-  -moz-box-shadow: 0 0 50px #eee;
-  box-shadow: 0 0 80px -50px #fff;
-  width: 50%;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  /* future proofing */
-  -khtml-border-radius: 5px;
-  /* for old Konqueror browsers */
-  position: relative;
-  display: inline-block; }
-
-.hero {
+#hero {
   padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
   background-color: #e0e0e0; }
-  .hero .slogan {
+  #hero .slogan {
     position: relative;
     float: left;
     margin-left: 9vw; }
-    .hero .slogan h1 {
+    #hero .slogan h1 {
       font-size: 5vw;
       font-family: Montserrat, sans-serif;
       color: #846b8a;
       text-align: center; }
-    .hero .slogan .btn-large {
+    #hero .slogan .btn-large {
       color: white;
       background-color: #7D59A7;
       font-size: 1.6vw;
@@ -79,60 +78,78 @@
       /* for old Konqueror browsers */
       transition: 0.4s box-shadow, 8s background-color;
       box-shadow: 0 0 150px rgba(255, 255, 255, 0.2), 0px 3px 15px #444; }
-      .hero .slogan .btn-large:hover {
+      #hero .slogan .btn-large:hover {
         box-shadow: none;
         background-color: #9D59F7; }
-  .hero img {
+  #hero img {
     width: 50vw;
     margin-left: 6vw; }
 
-.nav-wrapper {
-  padding: 0 24px; }
+#team h1 {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  opacity: 0.7; }
+#team .team-card {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
+  position: relative; }
+  #team .team-card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+    #team .team-card:hover .btn-flat {
+      background-color: #7D59A7;
+      color: white; }
+#team .member {
+  display: block;
+  margin: auto;
+  height: auto;
+  float: none;
+  padding: auto; }
+  #team .member .img-container {
+    width: 100%; }
+  #team .member .content {
+    position: relative;
+    display: block; }
+  #team .member h4 {
+    opacity: 0.85; }
+  #team .member .title {
+    opacity: 0.7; }
+  #team .member .btn-flat {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.5s ease;
+    padding: 0 12px;
+    border-radius: 2px; }
+    #team .member .btn-flat:hover {
+      background-color: #907897; }
 
-.navbar-fixed {
-  margin-bottom: 50px; }
-
-nav {
-  height: 120px;
-  transition: 0.2s ease;
-  box-shadow: none; }
-  nav .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-  nav ul {
-    display: inline !important;
-    vertical-align: middle !important; }
-    nav ul a {
-      height: 120px;
-      transition: 0.2s ease;
-      line-height: 120px;
-      color: #665;
-      font-family: Montserrat, sans-serif; }
-      nav ul a:hover {
-        color: #fff;
-        transition: 0.1s color, 0.3s background-color;
-        background-color: #7D59A7;
-        transition: 0.2s ease; }
-  nav .brand-logo {
-    height: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    transition: 0.2s ease; }
-    nav .brand-logo img {
-      height: 100%;
-      display: inline-block;
-      transition: 0.2s ease; }
-
-.shrink {
-  height: 60px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
-  .shrink .brand-logo {
-    padding-top: 0px;
-    padding-bottom: 0px; }
-  .shrink a {
-    line-height: 60px;
-    height: 60px; }
+#services {
+  background-color: #64b5f6; }
+  #services h1 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    color: white; }
+  #services .collapsible .collapsible-header {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #555;
+    background-color: #fdfdfd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.1s; }
+    #services .collapsible .collapsible-header:hover {
+      color: #000;
+      background-color: #fff;
+      transform: translate(-10px, 0); }
+    #services .collapsible .collapsible-header.active {
+      color: #000;
+      background-color: #fff; }
+      #services .collapsible .collapsible-header.active:hover {
+        color: #555;
+        background-color: #fdfdfd;
+        transform: none; }
+  #services .collapsible .collapsible-body {
+    background-color: white; }
 
 @media only screen and (max-width: 992px) {
   .hero img {
@@ -147,38 +164,5 @@ nav {
       nav .brand-logo img {
         height: 60px;
         margin: 0; } }
-p {
-  line-height: 2rem; }
-
-.button-collapse {
-  color: #26a69a; }
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255, 255, 255, 0.9); }
-
-.parallax-container .section {
-  width: 100%; }
-
-@media only screen and (max-width: 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%; }
-
-  #index-banner .section {
-    top: 10%; } }
-@media only screen and (max-width: 600px) {
-  #index-banner .section {
-    top: 0; } }
-.icon-block {
-  padding: 0 15px; }
-
-.icon-block .material-icons {
-  font-size: inherit; }
-
-footer.page-footer {
-  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

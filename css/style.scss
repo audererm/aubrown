@@ -3,86 +3,84 @@ $purple: #76607C;
 $lightpurple: lighten($purple, 5%);
 $darkpurple: #7D59A7;
 $lightbrown: #E8DBC5;
+$brown: #d7ccc8;
 
 $mont: Montserrat, sans-serif;
+
 $nav-height: 120px;
 
-.team {
-    h1 {
-        font-family: $mont;
-        text-align: center;
-        opacity: 0.7;
-    }
-    .team-card {
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-        transition: box-shadow 0.5s ease;
-        &:hover {
-            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+#navbar {
+    margin-bottom: 50px;
+    nav {
+        height: $nav-height;
+        transition: 0.2s ease;
+        box-shadow: none;
+        .nav-wrapper {
+            padding: 0 24px;
+        }
 
-            .btn-flat {
-                background-color: $darkpurple;
-                color: white;
+        ul {
+            display: inline !important;
+            vertical-align: middle !important;
+            a {
+                height: $nav-height;
+                //padding-top: 20px;
+                //padding-bottom: 20px;
+                transition: 0.2s ease;
+                line-height: 120px;
+                color: #665;
+                font-family: $mont;
+                &:hover {
+                    color: #fff;
+                    transition: 0.1s color, 0.3s background-color;
+                    background-color: $darkpurple;
+                    transition: 0.2s ease;
+                    .highlight {
+                        color: white;
+                    }
+                }
+            }
+            .highlight {
+                    a {
+                        color: $darkpurple;
+                    }
+                    //box-shadow: inset 0 8px 0 $darkpurple, inset 0px 0px 8px 2px $darkpurple;
+                    //border-bottom: 8px solid $darkpurple;
+                    //background-color: $darkpurple;
+                    //background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 255, 255, .5) 35px, rgba(255, 255, 255, .5) 70px);
+                    transition: color 0.2s, border 0.2s;
+                    &:hover {
+                        a {
+                            color: white
+                        };
+                    }
             }
         }
-        position: relative;
-    }
-    .member {
-        //background-color: $lightbrown;
-        display: block;
-        margin: auto;
-        height: auto;
-        float: none;
-        padding: auto;
-
-        .img-container {
-            width: 100%;
+        .brand-logo {
+            height: 120px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            transition: 0.2s;
+            img {
+                height: 100%;
+            }
         }
-
-        img {
-            //width: 16vw;
-            //padding-left: 1vw;
+        &.shrink {
+            height: 60px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            .brand-logo {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            a {
+                line-height: 60px;
+                height: 60px;
+            }
         }
-
-        .content {
-            position: relative;
-            display: block;
-        }
-
-        h4 {
-            opacity: 0.85;
-        }
-
-        .title {
-            opacity: 0.7;
-        }
-
-        .btn-flat {
-            position: absolute;
-            right: 20px;
-            bottom: 20px;
-            transition: 0.5s ease;
-        }
-
     }
 }
 
-.glow {
-    -webkit-box-shadow: 0 0 50px #eee;
-    -moz-box-shadow: 0 0 50px #eee;
-    box-shadow: 0 0 80px -50px #fff;
-    width: 50%;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    /* future proofing */
-    -khtml-border-radius: 5px;
-    /* for old Konqueror browsers */
-    position: relative;
-    display: inline-block;
-
-}
-
-.hero {
+#hero {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 0;
@@ -117,7 +115,6 @@ $nav-height: 120px;
             //margin-left: 50px;
             transition: 0.4s box-shadow, 8s background-color;
             box-shadow: 0 0 150px rgba(255, 255, 255, 0.2), 0px 3px 15px #444;
-
             &:hover {
                 box-shadow: none;
                 background-color: #9D59F7;
@@ -130,65 +127,97 @@ $nav-height: 120px;
     }
 }
 
-.nav-wrapper {
-    padding: 0 24px;
-}
-
-.navbar-fixed {
-    margin-bottom: 50px;
-}
-
-nav {
-    height: $nav-height;
-    transition: 0.2s ease;
-    box-shadow: none;
-    .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
+#team {
+    h1 {
+        font-family: $mont;
+        text-align: center;
+        opacity: 0.7;
     }
-    ul {
-        display: inline !important; 
-        vertical-align: middle !important;
-        a {
-            height: $nav-height;
-            //padding-top: 20px;
-            //padding-bottom: 20px;
-            transition: 0.2s ease;
-            line-height: 120px;
-            color: #665;
-            font-family: $mont;
-            &:hover {
-                color: #fff;
-                transition: 0.1s color, 0.3s background-color;
+    .team-card {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.5s ease;
+        &:hover {
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
+            .btn-flat {
                 background-color: $darkpurple;
-                transition: 0.2s ease;
+                color: white;
             }
         }
+        position: relative;
     }
-    .brand-logo {
-        height: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        transition: 0.2s ease;
+    .member {
+        //background-color: $lightbrown;
+        display: block;
+        margin: auto;
+        height: auto;
+        float: none;
+        padding: auto;
+        .img-container {
+            width: 100%;
+        }
         img {
-            height: 100%;
-            display: inline-block;
-            transition: 0.2s ease;
+            //width: 16vw;
+            //padding-left: 1vw;
+        }
+        .content {
+            position: relative;
+            display: block;
+        }
+        h4 {
+            opacity: 0.85;
+        }
+        .title {
+            opacity: 0.7;
+        }
+        .btn-flat {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            transition: 0.5s ease;
+            padding: 0 12px;
+            &:hover {
+                background-color: lighten($purple, 10%);
+            }
+            border-radius: 2px;
         }
     }
 }
 
-.shrink {
-    height: 60px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    .brand-logo {
-        padding-top: 0px;
-        padding-bottom: 0px;
+#services {
+    background-color: #64b5f6;
+    h1 {
+        font-family: $mont;
+        text-align: center;
+        color: white;
+        //opacity: 0.8;
     }
-    a {
-        line-height: 60px;
-        height: 60px;
+    .collapsible {
+        .collapsible-header {
+            font-family: $mont;
+            font-size: 20px;
+            color: #555;
+            background-color: rgb(253, 253, 253);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: 0.1s;
+            &:hover {
+                color: #000;
+                background-color: #fff;
+                transform: translate(-10px, 0);
+            }
+            &.active {
+                color: #000;
+                background-color: #fff;
+                &:hover {
+                    color: #555;
+                    background-color: rgb(253, 253, 253);
+                    transform: none;
+                }
+            }
+        }
+        .collapsible-body {
+            background-color: white;
+        }
     }
 }
 
@@ -208,51 +237,4 @@ nav {
             }
         }
     }
-}
-
-p {
-    line-height: 2rem;
-}
-
-.button-collapse {
-    color: #26a69a;
-}
-
-.parallax-container {
-    min-height: 380px;
-    line-height: 0;
-    height: auto;
-    color: rgba(255, 255, 255, .9);
-}
-
-.parallax-container .section {
-    width: 100%;
-}
-
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
-    }
-    #index-banner .section {
-        top: 10%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
-}
-
-.icon-block {
-    padding: 0 15px;
-}
-
-.icon-block .material-icons {
-    font-size: inherit;
-}
-
-footer.page-footer {
-    margin: 0;
 }
