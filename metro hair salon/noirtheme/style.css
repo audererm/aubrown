@@ -1,0 +1,12 @@
+/*
+Theme Name: Salon Noir
+Theme URI: Your Theme's URI
+Description: A sleek black & white theme for hair and spa salons.
+Version: 1.0
+Author: Michael Auderer
+Author URI: http://michaelauderer.com/
+*/
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css");
+@import url("css/style.css");
