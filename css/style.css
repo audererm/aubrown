@@ -1,3 +1,8 @@
+.lite-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 95%; }
+
 #navbar {
   margin-bottom: 50px; }
   #navbar nav {
@@ -150,6 +155,66 @@
         background-color: #fdfdfd; }
   #services .collapsible .collapsible-body {
     background-color: white; }
+
+#work {
+  background-color: #eee;
+  height: 1000px; }
+  #work h1 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    opacity: 0.7; }
+  #work h2 {
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.9; }
+  #work .demo {
+    position: relative; }
+    #work .demo img {
+      position: absolute; }
+    #work .demo .demo-phone {
+      left: 430px;
+      top: 180px;
+      z-index: 2; }
+    #work .demo .demo-computer-frame {
+      position: absolute;
+      opacity: 0.9;
+      width: 505px;
+      height: 292px;
+      left: 34.5px;
+      top: 24px; }
+      #work .demo .demo-computer-frame iframe {
+        border: none;
+        width: 1010px;
+        height: 584px;
+        -moz-transform: scale(0.5);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        -webkit-transform-origin: 0 0; }
+    #work .demo .demo-phone-frame {
+      position: absolute;
+      opacity: 0.9;
+      width: 139.5px;
+      height: 231px;
+      left: 445px;
+      top: 205px;
+      z-index: 3; }
+      #work .demo .demo-phone-frame iframe {
+        border: none;
+        width: 465px;
+        height: 770px;
+        -moz-transform: scale(0.3);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.3);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.3);
+        -webkit-transform-origin: 0 0; }
+  #work .card {
+    width: 500px;
+    height: 400px;
+    display: block;
+    margin: auto; }
 
 @media only screen and (max-width: 992px) {
   .hero img {
